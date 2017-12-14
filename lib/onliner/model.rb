@@ -11,7 +11,7 @@ module Devise
 
             online_array.each do |k, v|
               if (Time.now - v.to_time <= time)
-                array_ids << k.to_i
+                array_ids << k
               end
             end
 
