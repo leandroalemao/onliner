@@ -26,7 +26,7 @@ terminate the process if you run:detached.
 
 For using functionality add to ApplicationControler:
 
-	before_filter { |c| current_user.track unless current_user.nil?}
+	before_action { |c| current_user.track unless current_user.nil?}
 
 and In your model, add :onliner to the current devise line at the end:
 
